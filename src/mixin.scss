@@ -1,0 +1,131 @@
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  width: 152px;
+  min-height: 54px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  position: relative;
+  h1 {
+    font-size: 16px;
+    color: #000000;
+  }
+}
+
+@mixin cardActive {
+  background-color: #000000;
+  h1 {
+    color: #ffffff;
+  }
+}
+
+@mixin btn {
+  position: absolute;
+  width: 152px;
+  height: 106%;
+  border-radius: 12px;
+  left: -2px;
+  top: -2px;
+  opacity: 0;
+}
+
+@mixin block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 24px;
+  background-color: #000000;
+  border-radius: 89px;
+  margin-top: 6px;
+  p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 10px;
+  }
+}
+
+@mixin blockActive {
+  background-color: #ffffff;
+  p {
+    color: #000000;
+  }
+}
+
+@mixin addBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 24px;
+  border: 2px solid #FFFFFF;
+  border-radius: 89px;
+  background-color: #000000;
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: white;
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+
+  }
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+@mixin deleteBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 7px;
+  cursor: pointer;
+  svg {
+    path {
+      fill: #FF3737;
+    }
+    transform: rotate(135deg);
+  }
+}
+
+@mixin circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  bottom: -13px;
+  left: 64px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  .arrow {
+    margin-bottom: 1px;
+  }
+  &:hover {
+    background-color: #000000;
+    .plus {
+      path {
+        fill: #ffffff;
+      }
+    }
+    .arrow {
+      path {
+        stroke: #ffffff;
+      }
+    }
+  }
+}

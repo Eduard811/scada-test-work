@@ -1,0 +1,29 @@
+@import "./src/mixin";
+
+.firstCard {
+  @include card()
+}
+
+.firstCardActive {
+  @include  cardActive()
+}
+
+.btn {
+  @include btn()
+}
+
+.block {
+  @include block()
+}
+
+.blockActive {
+  @include blockActive()
+}
+
+.addBlock {
+  @include addBlock()
+}
+
+.deleteBlock {
+  @include deleteBlock()
+}

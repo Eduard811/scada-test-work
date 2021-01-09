@@ -1,0 +1,59 @@
+@import "./src/mixin";
+
+.cardWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mainCard {
+  @include card()
+}
+
+.mainCardActive {
+  @include  cardActive()
+}
+
+.btn {
+  @include btn()
+}
+
+.block {
+  @include block()
+}
+
+.blockActive {
+  @include blockActive()
+}
+
+.addBlock {
+  @include addBlock()
+}
+
+.deleteBlock {
+  @include deleteBlock()
+}
+
+.circle {
+  @include circle()
+}
+
+.connectionFirst {
+  position: absolute;
+  left: -177px;
+  bottom: -44px;
+}
+
+.connectionSecond {
+  position: absolute;
+  bottom: -44px;
+  left: 39px;
+}
+
+.connectionThird {
+  position: absolute;
+  bottom: -44px;
+  left: 75px;
+}
